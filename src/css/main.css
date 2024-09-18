@@ -12,3 +12,94 @@ img,
 video {
   display: block;
 }
+
+body {
+  font-family: "roboto";
+}
+
+.content {
+  position: absolute;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bar,
+.data,
+.right,
+.left,
+.country,
+.legend,
+.legend-section {
+  display: flex;
+}
+
+.country {
+  align-items: center;
+}
+
+.data {
+  height: 30px;
+  width: 420px;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.bar {
+  color: white;
+  width: 300px;
+  height: 100%;
+  gap: 2px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.mobile-color {
+  background: #ffcc2f;
+}
+
+.desktop-color {
+  background: #37d3d2;
+}
+
+.left,
+.right {
+  align-items: center;
+  justify-content: center;
+}
+
+.data.suisse .left {
+  width: 65%;
+}
+
+.data.États-Unis .left {
+  width: 51%;
+}
+
+.data.Europe .left {
+  width: 41%;
+}
+
+.right {
+  flex-grow: 1;
+  border-radius: 0 10px 10px 0;
+}
+
+.legend-section {
+  position: relative;
+  top: 20px;
+  font-weight: 700;
+  font-size: 12px;
+  gap: 20px;
+  left: 200px;
+}
+
+.legend {
+  gap: 10px;
+}
+
+.color-square {
+  width: 16px;
+  height: 16px;
+}
